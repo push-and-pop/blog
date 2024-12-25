@@ -11,13 +11,13 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: Theme Redefine
+  title: LanTian's Blog
   # Site subtitle
-  subtitle: Redefine Your Hexo Journey.
+  # subtitle: Redefine Your Hexo Journey.
   # Author name
-  author: The Redefine Team
+  author: LanTian
   # Site URL
-  url: https://redefine.ohevan.com
+  url: https://push-and-pop.github.io
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -27,7 +27,7 @@ defaults:
   # Favicon
   favicon: /images/redefine-favicon.svg
   # Site logo
-  logo: 
+  logo: /images/redefine-logo.svg
   # Site avatar
   avatar: /images/redefine-avatar.svg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -88,7 +88,7 @@ global:
   single_page: true
   # Whether to enable Preloader.
   preloader:
-    enable: false
+    enable: true
     custom_message: # Custom message. If empty, the site title will be displayed
   # Whether to enable open graph
   open_graph:
@@ -128,10 +128,10 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: home_banner_title
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["This is the first message", "This is the second message", "etc"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
@@ -140,7 +140,7 @@ home_banner:
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)
     backing_delay: 1500 # Backing delay (ms)
-    loop: true # Whether to loop
+    loop: false # Whether to loop
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
   text_color: 
@@ -178,7 +178,7 @@ home_banner:
       # ...... # you can add more
     # Social links with QRcode drawers
     qrs:
-      weixin:  # your Wechat QRcode image URL
+      weixin: https://example.com/weixin.png # your Wechat QRcode image URL
       # ...... # you can add more
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -202,9 +202,9 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
@@ -300,7 +300,7 @@ articles:
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button
-    style: mac # mac | simple
+    style: simple # mac | simple
     highlight_theme: # Color scheme for highlightjs code highlighting. For preview, see https://highlightjs.org/examples
       light: github # light mode theme, support: github, atom-one-light, default
       dark: vs2015 # dark mode theme, support: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
