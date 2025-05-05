@@ -12,6 +12,8 @@ npm install hexo-deployer-git --save
 
 ```
 
+themes\redefine下更新git submodule
+
 #### 发布
 
 ```YAML
@@ -47,4 +49,4 @@ hexo new page "name"  # 新建页面
 ```
 
 #### 主题
-[text](https://redefine-docs.ohevan.com/zh/introduction)
+[redefine](https://redefine-docs.ohevan.com/zh/introduction)
